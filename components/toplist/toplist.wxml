@@ -1,0 +1,8 @@
+<view class="toplist_card" bindtap="to_hotSonglist">
+    <image class="card_image" src="{{toplist.coverImgUrl}}"></image>
+    <view class="songs">
+        <view wx:for="{{toplist_songs}}" wx:for-item="item" wx:for-index='i' wx:key='*this'>
+            <view class="text">{{i+1}} . {{item.name}}</view>
+        </view>
+    </view>
+</view>

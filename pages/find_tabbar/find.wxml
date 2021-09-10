@@ -1,0 +1,64 @@
+<view class="find_container">
+  <view class="blank" style='height:{{search_height}}px;'></view>
+  <view class="search">
+    <view class="head_container">
+      <image class="search_icon" src="/static/icon/icon_tabber/search.png"></image>
+      <input class="_input" type="text" placeholder="搜索喜爱的歌曲" bindtap="toSearch" placeholder-style="color:#bfbfbf;"
+        value="" name="search" />
+    </view>
+  </view>
+
+
+  <!-- 轮播图 -->
+  <view class="banner">
+    <banner swiper="{{bannerlist}}"></banner>
+  </view>
+
+  <!-- 图标 -->
+  <view class="navContainer">
+		<view class="navItem">
+			<text class="iconfont icon-meirituijian" bindtap="toRecommendSong"></text>
+			<text>每日推荐</text>
+		</view>
+		<view class="navItem">
+			<text class="iconfont icon-gedan1" bindtap="err"></text>
+			<text>界面</text>
+		</view>
+		<view class="navItem">
+			<text class="iconfont icon-icon-ranking" bindtap="err"></text>
+			<text>排行榜</text>
+		</view>
+		<view class="navItem">
+			<text class="iconfont icon-diantai" bindtap="err"></text>
+			<text>电台</text>
+		</view>
+		<view class="navItem">
+			<text class="iconfont icon-zhibobofangshexiangjitianxianxianxing" bindtap="err"></text>
+			<text>直播</text>
+		</view>
+	</view>
+
+  <view class="divLine"></view>
+
+
+  <view class="toplist">
+    <top_listcard toplist='{{toplist0}}' toplist_songs='{{toplist0_songs}}'></top_listcard>
+    <top_listcard toplist='{{toplist1}}' toplist_songs='{{toplist1_songs}}'></top_listcard>
+    <top_listcard toplist='{{toplist2}}' toplist_songs='{{toplist2_songs}}'></top_listcard>
+    <top_listcard toplist='{{toplist3}}' toplist_songs='{{toplist3_songs}}'></top_listcard>
+  </view>
+
+  <view class="divLine1"></view>
+  <view class="recommend_header">
+    精品歌单
+  </view>
+  <view class="commmendContainer">
+		<scroll-view class="recommendScroll" enable-flex scroll-x>
+			<view class="scrollItem" wx:for="{{recommendList}}" bindtap="to_hotSonglist" data-id="{{item.id}}" wx:key="id">
+				<image src="{{item.coverImgUrl}}"></image>
+				<text>{{item.name}}</text>
+			</view>
+		</scroll-view>
+	</view>
+
+</view>

@@ -1,0 +1,27 @@
+<view class="SongContainer">
+    <!--  头部  -->
+    <view class="header">
+        <image src="{{music_list[0].al.picUrl}}"></image>
+    </view>
+
+    <!--   列表区域 -->
+    <view class="ListContainer">
+        <view class="listHeader">
+            <text>播放全部</text>
+            <text class="changeMore">多选</text>
+        </view>
+
+        <!--   内容区     -->
+        <scroll-view scroll-y class="listScroll">
+            <view class="scrollItem" wx:for="{{music_list}}" data-index="{{index}}" data-song="{{item}}" wx:key="id" bindtap="toPlay">
+                <image src="{{item.al.picUrl}}"></image>
+                <view class="musicInfo">
+                    <text class="musicName">{{item.name}}</text>
+                    <text class="author">{{item.ar[0].name}}</text>
+                </view>
+                <text class="iconfont icon-gengduo"></text>
+            </view>
+        </scroll-view>
+    </view>
+
+</view>

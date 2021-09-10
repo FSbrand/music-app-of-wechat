@@ -1,0 +1,28 @@
+<view class="search_container">
+  <view class="head_container">
+    <image class="search_icon" src="/static/icon/icon_tabber/search.png"></image>
+    <input bindinput="getSuggest" class="_input" type="text" placeholder="{{search_dafault}} " bindblur="cancle"
+      placeholder-style="color:#bfbfbf;" value="{{search_value}}" name="search" />
+    <text bindtap="_return" class="_return">取消</text>
+  </view>
+
+
+
+  <view class="suggestlist" wx:if="{{haskey}}">
+    <view wx:for="{{suggestlist}}" class="suggestword" wx:for-item="item" wx:key="*this" data-keyword="{{item.keyword}}" bindtap="getSuggestDetail">{{item.keyword}}</view>
+  </view>
+
+
+  <view class="hot_songCon">
+    <view class="divLine"></view>
+    <view class="divLine_con">
+      <view>热搜榜</view>
+    </view>
+    <view wx:for="{{hot_songlist}}" wx:for-index="i" wx:for-item="item" class="_item" wx:key='*this' data-keyword="{{item.searchWord}}" bindtap="getSuggestDetail">
+      <view class="hot_song">
+        {{i+1}} {{item.searchWord}}
+      </view>
+      <image class="hot_icon" wx:if="{{item.iconType!==0}}" src="{{item.iconUrl}}"></image>
+    </view>
+  </view>
+</view>

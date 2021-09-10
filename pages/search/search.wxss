@@ -1,0 +1,88 @@
+/* pages/search/search.wxss */
+page{
+  background-color: #dcdcdc;
+}
+.search_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.head_container{
+  top: 25rpx;
+  position: relative;
+  width: 650rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.search_icon{
+  position: absolute;
+  width: 35rpx;
+  height: 35rpx;
+  left: 20rpx
+}
+._input{
+  font-size: 40rpx;
+  height: 55rpx;
+  width: 550rpx;
+  color:black;
+  border-radius: 15rpx;
+  padding-left: 75rpx;
+  background:#fcfcfc;
+  border: solid 1rpx #fcfcfc;
+}
+.suggestlist{
+  width: 650rpx;
+  position: relative;
+  top: 35rpx;
+  z-index: 15;
+  background-color:white;
+  color: black;
+  border-radius: 15rpx;
+}
+.suggestword{
+  margin-left: 5rpx;
+  margin-bottom: 15rpx;
+  z-index: 15;
+}
+
+._return{
+  margin-left: 15rpx;
+  width: 100rpx;
+  font-size: 40rpx;
+  white-space: nowrap;
+}
+.divLine_con{
+  width: 650rpx;
+  margin-top: 80rpx;
+  margin-bottom: 25rpx;
+}
+.divLine{
+  background: #E0E3DA;
+  width: 650rpx;
+  height: 5rpx;
+ }
+.hot_songCon{
+  width: 650rpx;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top:50px;
+  z-index: -1;
+}
+._item{
+  width: 325rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.hot_song{
+  font-size: 34rpx;
+}
+.hot_icon{
+  margin-left: 5rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+

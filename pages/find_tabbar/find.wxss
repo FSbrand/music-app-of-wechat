@@ -1,0 +1,146 @@
+/* pages/find_tabbar/find.wxss */
+page{
+  background-color: 	#DCDCDC;
+}
+.blank{
+  z-index: 3;
+}
+
+
+.search{
+  position:fixed;
+  z-index: 22;
+}
+
+/* 搜索 */
+.head_container{
+  top:0;
+  left: 40rpx;
+  position: relative;
+  width: 500rpx;
+  display: flex;
+  align-items: center;
+}
+.search_icon{
+  position: absolute;
+  margin-top: 3px;
+  width: 30rpx;
+  height: 30rpx;
+  left: 30rpx
+}
+._input{
+  font-size: 30rpx;
+  margin-top: 3px;
+  height: 34px;
+  width: 400rpx;
+  color:#bfbfbf;
+  border-radius: 999px;
+  padding-left: 80rpx;
+  background:	#FFFFFF;
+  border: solid 1rpx #fcfcfc;
+}
+
+
+.banner{
+  z-index: -1;
+  width: 100%;
+  padding-left: 40rpx;
+  align-items: center;
+  margin-top: 50px;
+  height: 350rpx;
+}
+
+
+.navContainer{
+  display: flex;
+  width: 680rpx;
+  margin-left: 35rpx;
+}
+
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background: rgb(240,19,19);
+  font-size: 50rpx;
+  color: #fff;
+  margin: 20rpx 0;
+}
+
+
+.navItem text{
+  font-size: 26rpx;
+}
+
+
+.divLine{
+  margin-left: 35rpx;
+  margin-top: 30rpx;
+  background: #F5F5F5;
+  width: 680rpx;
+  height: 8rpx;
+ }
+
+
+.toplist{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+}
+
+/* 推荐歌曲样式设置 */
+.recommend_header{
+  padding-left: 20rpx;
+  font-family: Microsoft JhengHei;
+  font-weight: 400;
+}
+.commmendContainer{
+  display: flex;
+  padding: 12rpx 20rpx 20rpx 20rpx;
+  height: 300rpx;
+}
+
+/* 推荐内容区 的样式*/
+.divLine1{
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  background: #F5F5F5;
+  width: 750rpx;
+  height: 8rpx;
+ }
+.recommendScroll{
+  display: flex;
+}
+
+.scrollItem{
+  width: 200rpx;
+  height: 230rpx;
+  margin-right: 10rpx;
+}
+
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.scrollItem text{
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /* 设置对其模式 */
+  -webkit-line-clamp:2; /* 设置多行的行数*/
+}
+

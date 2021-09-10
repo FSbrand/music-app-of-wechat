@@ -1,0 +1,24 @@
+.toplist_card{
+    width: 680rpx;
+    display: flex;
+    margin-bottom: 20rpx;
+  }
+  .card_image{
+    width: 170rpx;
+    height: 170rpx;
+    border-radius: 15rpx;
+  }
+  .songs{
+    margin-left: 20rpx;
+    width: 490rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25rpx;
+  }
+  .text{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+  

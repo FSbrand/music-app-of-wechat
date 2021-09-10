@@ -1,0 +1,37 @@
+<view class="songDetailContainer">
+    <view class="author">{{song.ar[0].name}}</view>
+    <view class="circle"></view>
+    <image class="needle {{isPlay && 'needleRotate'}}" src="../../static/image/music_play/needle.png"></image>
+    <view class="discContainer {{isPlay && 'discAnimation'}}">
+        <image class="disc" src="../../static/image/music_play/circle.png"></image>
+        <image class="musicImg" src="{{song.al.picUrl}}"></image>
+    </view>
+
+    <!--  进度条控制区域  -->
+    <view class="programControl">
+        <text>{{left_time}}:{{left_time1}}</text>
+        <!--  总的进度条   -->
+        
+            <slider class="barControl"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="{{value}}"
+                    activeColor="#FF0000"
+                    backgroundColor="#FFFFFF"
+                    block-size="12rpx"
+                    bindchange="changevalue">
+            </slider>
+       
+        <text>{{sub_time}}:{{sub_time1}}</text>
+    </view>
+
+    <!-- 底部控制播放区域 -->
+    <view class="musicControl">
+        <text class="iconfont icon-random"></text>
+        <text class="iconfont icon-prev_song" id="pre" bindtap="handleSwitch"></text>
+        <text class="iconfont {{isPlay?'icon-pause': 'icon-play'}} big" bindtap="handleMusicPlay"></text>
+        <text class="iconfont icon-next_song" id="next" bindtap="handleSwitch"></text>
+        <text class="iconfont icon-bofangliebiao"></text>
+    </view>
+</view>

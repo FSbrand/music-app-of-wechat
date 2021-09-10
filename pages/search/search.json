@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "搜索音乐",
+  "navigationBarBackgroundColor": "#dcdcdc",
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white"
+}

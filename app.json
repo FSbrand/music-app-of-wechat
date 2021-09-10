@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/find_tabbar/find",
+        "pages/music_play/musci_play",
+        "pages/search/search",
+        "pages/my_tabbar/my",
+        "pages/video_tabbar/video",
+        "pages/hot_songlist/hot_songlist",
+        "pages/login/login",
+        "pages/recommend_songs/recommend"
+    ],
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/find_tabbar/find",
+                "text": "发现",
+                "iconPath": "./static/icon/icon_tabber/home.png",
+                "selectedIconPath": "./static/icon/icon_tabber/home_red.png"
+            },
+            {
+                "pagePath": "pages/video_tabbar/video",
+                "text": "播客",
+                "iconPath": "./static/icon/icon_tabber/find.png",
+                "selectedIconPath": "./static/icon/icon_tabber/find_red.png"
+            },
+            {
+                "pagePath": "pages/my_tabbar/my",
+                "text": "我的",
+                "iconPath": "./static/icon/icon_tabber/mine.png",
+                "selectedIconPath": "./static/icon/icon_tabber/mine_red.png"
+            }
+        ],
+        "backgroundColor": "DCDCDC",
+        "selectedColor": "#d81e06",
+        "color": "#8a8a8a"
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#DCDCDC",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

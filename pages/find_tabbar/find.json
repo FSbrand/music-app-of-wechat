@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "banner": "../../components/swiper/swiper",
+    "top_listcard":"../../components/toplist/toplist"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white"
+}
